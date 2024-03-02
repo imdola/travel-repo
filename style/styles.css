@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap')
 
 
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +12,101 @@ html, body{
     height: 100%;
     width: 100%;
 }
+/* Shared Items  Starts */
+.paint{
+    color:#FF5400;
+}
+/* Shared Items  Ends */
+
 body{
     font-family: "Mulish", sans-serif;
+    margin: 0 auto;
+    /* max-width: 1450px; */
+    /* border: 4px solid blue; */
+}
+
+/* Nav Section Starts */
+#nav-bar{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: violet; */
+    /* min-height: 20px; */
+}
+.logo{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 3vw;
+}
+.logo img{
+    width: 40px;
+}
+.logo h2{
+    margin-left: 3vw;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.menu-items{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    margin-left: 2vw;
+    padding: 0 3vw;
+    /* background-color: blue; */
+    
+}
+.menu-items a{
+    text-decoration: none;
+    font-size: 1.1vw;
+    font-weight: 400;
+    color: #424247;
+    line-height: normal;
+    cursor: pointer;
+}
+.menu-items i{
+    font-size: 1.6vw;
+    font-weight: 800;
+    color: #131318;
+    display: none;
+}
+/* Nav Section Ends */
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive Section  */
+
+@media screen and (max-width: 600px) {
+    
+    .logo{
+        padding: 0 5vw;
+    }
+    .logo h2{
+        font-size: 5.7vw;
+    }
+    .menu-items a{
+        color: white;
+        display: none;
+    }
+    .menu-items i{
+        display: block;
+        font-size: 5.2vw;
+        padding: 0 6vw;
+    }
 }
