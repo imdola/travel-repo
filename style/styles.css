@@ -12,7 +12,7 @@ html, body{
     height: 100%;
     width: 100%;
 }
-/* Shared Items  Starts */
+/***** Shared Items Starts *****/
 .btn{
     width: 9rem;
     font-size: 1rem;
@@ -24,7 +24,7 @@ html, body{
     border: none;
     cursor: pointer;
 }
-/* Shared Items  Ends */
+/****** Shared Items Ends ******/
 
 
 body{
@@ -34,7 +34,7 @@ body{
     /* border: 4px solid blue; */
 }
 
-/* Nav Section Starts */
+/****** Nav Section Starts ******/
 #nav-bar{
     width: 100%;
     height: 100%;
@@ -87,9 +87,9 @@ body{
     color: #131318;
     display: none;
 }
-/* Nav Section Ends */
+/****** Nav Section Ends ******/
 
-/* Banner Section Starts */
+/****** Banner Section Starts ******/
 #banner-section{
     width: 93%;
     height: 60vh;
@@ -153,9 +153,9 @@ form > input, select {
     height: 1.5rem;
     color: white;
 }
-/* Banner Section Ends */
+/****** Banner Section Ends ******/
 
-/* Popular Tour Start  */
+/****** Popular Tour Start  ******/
 #popular-tour{
     width: 95%;
     height: auto;
@@ -168,7 +168,7 @@ form > input, select {
 .left{
     width: 50%;
     /* border: 2px solid crimson; */
-    /* height: 60vh; */
+    
 }
 .left h1{
     color: #131318;
@@ -186,7 +186,7 @@ form > input, select {
     font-weight: 400;
     line-height: 1.6rem; 
 }
-.left>ul {
+.left > ul {
     margin-left: 1.2rem;
 }
 
@@ -211,6 +211,72 @@ form > input, select {
 .left .btn{
     margin-top: 1rem;
 }
+/****** Popular Tour Ends  ******/
+
+/******* Destination Section Starts*******/
+
+#destination {
+    margin-top: 4rem;
+    width: 100%;
+    height: auto;
+}
+.destination-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.destination-text > h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: .4rem;
+}
+.destination-text p {
+    width: 50%;
+    color: rgba(19, 19, 24, 0.70);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+.destination-gallery {
+    width: 97%;
+    
+}
+.gallery{
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 20rem;
+}
+.box{
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 1.75rem;
+    font-family: "Mulish", sans-serif;
+    font-weight: 800;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: #999;
+    background-position: center;
+    box-shadow: 0 0 4px white;
+}
+.col-2{
+    grid-column: span 2;
+}
+/******* Destination Section Ends*******/
+
+
 
 
 
@@ -273,6 +339,7 @@ form > input, select {
     .btn{
         width: 15rem;
     }
+    
     #popular-tour{
         flex-direction: column;
         gap: 2.5rem;
@@ -301,7 +368,31 @@ form > input, select {
     .right img{
         width: 100%;
     }
-    
+    /* destination section starts  */
+    .destination-text > h1 {
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 800;
+    }
+    .destination-text > p {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
 
+    }
+    .destination-gallery {
+        width: 100%;
+        
+    }
+    .gallery{
+        /* width: 100%; */
+        grid-auto-rows: 16rem;
+        padding-inline: 1rem;
+    }
+    .box{
+        grid-column: span 4;
+
+    }
     
 }
