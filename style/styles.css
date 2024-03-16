@@ -191,7 +191,7 @@ form > input, select {
 }
 
 
-.left ul> li {
+.left ul > li {
     color: rgba(19, 19, 24, 0.70);
     font-family: "Mulish", sans-serif;
     font-size: 1rem;
@@ -199,7 +199,6 @@ form > input, select {
     font-weight: 400;
     line-height: 1.6rem; 
 }
-
 .right {
    width: 40%;
    /* border: 2px solid royalblue; */
@@ -220,24 +219,27 @@ form > input, select {
     width: 100%;
     height: auto;
 }
-.destination-text, .attraction-text {
+.destination-text, .attraction-text, .service-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.destination-text  h1, .attraction-text h1 {
+.destination-text  h1, .attraction-text h1, .service-text h1 {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: .4rem;
+    font-family: "Mulish", sans-serif;
 }
-.destination-text p, .attraction-text p {
+.destination-text p, .attraction-text p, .service-text p {
     width: 50%;
     color: rgba(19, 19, 24, 0.70);
     margin-bottom: 1.5rem;
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
+    font-family: "Mulish", sans-serif;
+    line-height: 1.6rem;
 }
 .destination-gallery {
     width: 97%;
@@ -280,7 +282,7 @@ form > input, select {
 #attraction {
     margin-top: 4rem;
     width: 100%;
-    height: 100vh; 
+    /* height: 100vh;  */
 }
 .attraction-text p {
     margin-bottom: 2rem;
@@ -302,6 +304,7 @@ form > input, select {
     height: 19rem;
     margin: 1.25rem;
     border-radius: 8px;
+    cursor: pointer;
     overflow: hidden;
 }
 .images img {
@@ -383,6 +386,53 @@ form > input, select {
 .more .icons a:not(:last-child) i {
     margin-right: 1.25rem;
 }
+
+/************** Service Section Starts ******************/
+#service {
+    margin-top: 2rem;
+    width: 100%;
+    height: 100vh; 
+}
+.service-box-1 {
+    /* height: 18rem; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 0.312rem;
+    margin-top: 1.56rem;
+    gap: 0.5rem;
+}
+.service-box-2 {
+    /* height: 18rem; */
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.common {
+    width: calc((100% - 40px) / 2);
+    border-radius: 16px;
+}
+.common img {
+    padding: 2rem;
+    width: 7%;
+}
+.common h2 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: "Mulish", sans-serif;
+    padding-left: 2rem;
+    margin-top: -1.25rem;
+}
+.common p {
+    color: #5A5A5D;
+    padding: 1.25rem 4.4rem 2rem 2rem;
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: -1.9rem;
+    line-height: 1.6rem;
+}
+/************** Service Section Ends ******************/
 
 
 
@@ -480,7 +530,7 @@ form > input, select {
         text-align: justify;
         font-size: 1rem;
     }
-    .left ul> li {
+    .left ul > li {
         text-align: justify;
         font-size: 1rem;
     }
@@ -546,6 +596,26 @@ form > input, select {
     }
     .more .read-more .more .icons a i {
         font-size: 1.5rem;
+    }
+    /* ==========================Service section ================================ */
+    .service-text h1{
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+    }
+    .service-text p {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-bottom: 1rem;
+    }
+    .service-box-1, .service-box-2 {
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5rem auto;
+        width: 100%;
+    }
+    .common {
+        width: 95%;
     }
 
   
