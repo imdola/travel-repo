@@ -436,7 +436,7 @@ form > input, select {
 #news-letter {
     margin-top: 5rem;
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     /* border: 4px solid tomato; */
@@ -499,22 +499,23 @@ form > input, select {
     width: 79%;
     height: 3rem;
     margin-left: 3rem;
+    margin-bottom: 2rem;
 }
 .news-right {
     width: 50%;
-    height: 45%;
+    height: auto;
     position: relative;
     /* border: 2px solid green; */
 }
 .news-right img {
     width: 100%;
-    height: 45vh;
+    height: 84%;
 }
 .sticker {
     position: absolute;
     width: 15rem;
     right: 0.32rem;
-    bottom: 3.5rem;
+    bottom: 8rem;
     text-align: center;
     background: #FF5400;
     color: white;
@@ -523,6 +524,58 @@ form > input, select {
     transform: rotate(-35deg);
 }
 /************** Newsletter Section Ends ******************/
+
+/* =========== Footer Section Starts */
+footer {
+    margin-top: 2rem;
+    background: rgba(19, 19, 24, 0.05);
+}
+footer .logo {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.foot-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer p {
+    text-align: center;
+    color: #5A5A5D;
+    padding: 1rem;
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+.foot-icons {
+    text-align: center;
+    padding-bottom: 0.125rem;
+}
+.foot-icons i {
+    font-size: 2rem;
+    padding: 10px;
+}
+.foot-icons hr {
+    background: rgba(19, 19, 24, 0.10); 
+    margin: 20px 10%;
+}
+.foot-icons h5 {
+    color: #131318;
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+
 
 
 
@@ -721,7 +774,7 @@ form > input, select {
     padding-left: 2rem;
 }
 .news-left hr {
-    margin-left: 2rem;
+    margin-left: 2.1rem;
     width: 80%;
 }
 .nl-form input {
@@ -751,5 +804,4 @@ form > input, select {
     right: 1.32rem;
     transform: rotate(-23deg);
 }
-
 }
