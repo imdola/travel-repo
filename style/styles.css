@@ -207,6 +207,7 @@ form > input, select {
 .right img {
     width: 97%;
     height: 60vh;
+    border-radius: 16px;
 }
 
 /****** Popular Tour Ends  ******/
@@ -537,6 +538,7 @@ footer .logo {
     display: flex;
     align-items: center;
     padding: 1.25rem 0;
+    
 }
 .foot-logo {
     display: flex;
@@ -658,7 +660,7 @@ footer p {
     
     /* ======== destination section starts ===== */
     .destination-text > h1 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-style: normal;
         font-weight: 800;
     }
@@ -745,37 +747,37 @@ footer p {
     .news-left h1, .news-left p {
         padding-left: 2rem;
     }
-.news-left hr {
-    margin-left: 2.1rem;
-    width: 80%;
-}
-.nl-form input {
-    width: 77%;
-    height: 3rem;
-    margin-left: 2rem;
-}
-.nl-form button {
-    margin-bottom: 2rem;
-    margin-left: 2.2rem;
-    width: 80%;
-}
-.news-right {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.news-right img {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 52vh;
-}
-.sticker {
-    width: 15rem;
-    bottom: 3rem;
-    right: 1.30rem;
-    transform: rotate(-23deg);
-}
+    .news-left hr {
+        margin-left: 2.1rem;
+        width: 80%;
+    }
+    .nl-form input {
+        width: 77%;
+        height: 3rem;
+        margin-left: 2rem;
+    }
+    .nl-form button {
+        margin-bottom: 2rem;
+        margin-left: 2.2rem;
+        width: 80%;
+    }
+    .news-right {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .news-right img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 52vh;
+    }
+    .sticker {
+        width: 15rem;
+        bottom: 3rem;
+        right: 1.30rem;
+        transform: rotate(-23deg);
+    }
 /* ====== newsletter section starts ========= */
 
 }
